@@ -23,7 +23,6 @@
     box-shadow: 10px 10px 30px rgba(0,0,0,0.7);
 }
 form{
-    font-weight:bold;
     font-size: 20px;
     margin-top:20%;
     margin-left:10%;
@@ -32,6 +31,7 @@ form{
 form label {
     box-shadow: 2px 2px 2px green;
     padding: 0px 8px 3px 5px;
+    color: white;
 }
 .btn-login {
     font-size: 20px;
