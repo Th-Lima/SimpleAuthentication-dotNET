@@ -7,6 +7,10 @@ namespace SimpleAuthentication.Models
 {
     public class User
     {
+        public User()
+        {
+        }
+
         public User(int id, string name, string password, bool isAdmin)
         {
             Id = id;
