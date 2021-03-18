@@ -1,0 +1,17 @@
+﻿<link rel="stylesheet" href="~/css/authenticated.css" />
+
+@inject SimpleAuthentication.Lib.Login.UserLogin _userLogin
+<aside class="container">
+    <div class="jumbotron">
+        @if (TempData["MSG_E"] != null)
+        {
+            <p class="alert alert-danger text-center"><b>@TempData["MSG_E"]</b></p>
+        }
+        <h1 class="display-4">Olá, @_userLogin.GetUser().Name ... Você está autenticado</h1>
+        <p class="lead">Acesse o painel administrativo <a asp-action="Index" asp-controller="AdministrativePanel">aqui</a></p>
+        <hr class="my-4">
+        <p class="lead">
+            <a class="btn btn-primary btn-lg" role="button" asp-action="Logout">Sair</a>
+        </p>
+    </div>
+</aside>

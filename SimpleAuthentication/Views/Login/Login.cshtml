@@ -1,19 +1,24 @@
 ﻿@{
     ViewData["Title"] = "Login";
 }
+@model User;
 <link rel="stylesheet" href="~/css/card-login.css" />
 
 <div class="login-container">
+    @if (ViewData["MSG_E"] != null)
+    {
+        <p class="alert alert-danger text-center"><b>@Html.Raw(ViewData["MSG_E"])</b></p>
+    }
     <div class="glass-login">
         <div class="container">
-            <form class="col-sm-10">
+            <form class="col-sm-10" method="post" asp-action="Login">
                 <div class="form-group">
                     <label for="nome" class="mb-3">Nome</label>
-                    <input type="text" class="form-control" id="nome" aria-describedby="emailHelp" placeholder="Digite seu nome">
+                    <input type="text" class="form-control" id="nome" aria-describedby="emailHelp" placeholder="Digite seu nome" asp-for="@Model.Name">
                 </div>
                 <div class="form-group">
                     <label for="exampleInputPassword1" class="mb-3">Senha</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Digite sua senha">
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Digite sua senha" asp-for="@Model.Password">
                 </div>
                 <div class="text-center ml-3">
                     <button type="submit" class="col-lg-7 btn btn-success mt-5 btn-login">Entrar</button>
