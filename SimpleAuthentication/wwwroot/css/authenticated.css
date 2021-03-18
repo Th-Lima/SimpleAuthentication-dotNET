@@ -1,0 +1,11 @@
+﻿div.container {
+    height: 50em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.jumbotron {
+    margin: 0;
+    background:linear-gradient(#ffffff, #e1e1e1, #bdbdbd, #9b9b9b, #868686);
+}
