@@ -20,13 +20,9 @@ utilizando **.NET Core** com banco de dados **SQLite**
 #### Banco de Dados
 * SQLite
 
-## :rainbow: Layout:
-![image]()
-
-
 ## Para rodar o projeto
-* Necessário baixar o DB browser e SQLite -> https://sqlitebrowser.org/dl/
+* [Opcional, se quiser ver as tabelas ou adicionar outras]Necessário baixar o DB browser e SQLite -> https://sqlitebrowser.org/dl/
 * Visual Studio
     
-    Após clonar o projeto, basta rodar uma migration com o comando  -- Update-Database -- e roda-lo em seu Visual Studio.
+    Após clonar o projeto, basta roda-lo em seu Visual Studio.
     
