@@ -1,4 +1,3 @@
-# ToDo
 
 ## :clipboard: Sobre o projeto: 
 Projeto simples com a implementação de um sistema de autenticação próprio.
